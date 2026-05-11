@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarksGraf</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        font-size: 16px;
+        background: #f5f5f5;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding:2rem;
+      background: linear-gradient(90deg, #111, #0057FF);
+      color: #fff;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-circle {
+      width: 3rem;
+      min-height: 3rem;
+      border-radius: 2rem;
+      background: linear-gradient(135deg, #FFD400, #FF3B3B);
+    }
+
+    .logo-text {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #FFD400;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15rem;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+      position: relative;
+    }
+
+    .menu a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      min-height: 0.01rem;
+      background: #FFD400;
+      left: 0;
+      bottom: 0.1rem;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      color: #f8d302;
+    }
+
+    .menu a:hover::after {
+      width: 2rem;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      width: 1.6rem;
+      height: 0.2rem;
+      background: #fff;
+      display: block;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+      }
+    }
+
+.section-marksgraf {
+    min-height: 60dvh;
+    background: linear-gradient(to right, #cce7ff, #fff4b3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+    box-sizing: border-box;
+  }
+
+  .conteudo {
+    width: 800px;
+  }
+
+  .conteudo h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #003366;
+  }
+
+  .conteudo p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #333;
+  }
+
+  .mensagem-impacto {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+  }
+
+  .imagens {
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    gap: 1rem;
+
+  }
+
+  .imagens img {
+    width: 2rem;
+    min-height: 8rem;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .section {
+    min-height: 60dvh;
+    background: linear-gradient(to right, #fff9c4, #cfe8ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    width: 110rem;
+    min-height: 18rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8rem;
+}
+
+.card {
+    background-color: #a3e2f1;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    padding: 0.5rem;
+}
+
+.card img {
+    width: 5rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.nome {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.valor {
+    color: #333;
+}
+  
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+
+    <!-- LOGO (EDITÁVEL) -->
+    <div class="logo">
+      <div class="logo-circle"></div>
+      <div class="logo-text">MarksGraf</div>
+    </div>
+
+    <!-- MENU (EDITÁVEL) -->
+    <div class="menu">
+      <a href="#">SOBRE</a>
+      <a href="#">SERVIÇOS</a>
+      <a href="#">VALORES</a>
+      <a href="#">CONTATO</a>
+    </div>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </nav>
+
+  <section class="section-marksgraf">
+  
+  <div class="conteudo">
+    <h1>Marksgraf</h1>
+    <p>
+      Transformamos ideias em impressões que marcam! Na Marksgraf, sua marca ganha vida com qualidade, criatividade e precisão.
+    </p>
+
+    <div class="mensagem-impacto">
+      Impressões que impressionam, resultados que permanecem!
+    </div>
+  </div>
+
+  <div class="imagens">
+    <img src="https://via.placeholder.com/150?text=Cartão" alt="Cartão">
+    <img src="https://via.placeholder.com/150?text=Banner" alt="Banner">
+    <img src="https://via.placeholder.com/150?text=Folder" alt="Folder">
+    <img src="https://via.placeholder.com/150?text=Adesivo" alt="Adesivo">
+    <img src="https://via.placeholder.com/150?text=Flyer" alt="Flyer">
+    <img src="https://via.placeholder.com/150?text=Flyer" alt="Panfleto">
+  </div>
+
+</section>
+
+
+<section class="section">
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/80" alt="Imagem 1">
+            <div class="nome">Produto 1</div>
+            <div class="valor">R$ 00,00</div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/80" alt="Imagem 2">
+            <div class="nome">Produto 2</div>
+            <div class="valor">R$ 00,00</div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/80" alt="Imagem 3">
+            <div class="nome">Produto 3</div>
+            <div class="valor">R$ 00,00</div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/80" alt="Imagem 4">
+            <div class="nome">Produto 4</div>
+            <div class="valor">R$ 00,00</div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
